@@ -15,4 +15,8 @@
     <PackageReference Include="coverlet.collector" Version="3.1.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ASCII-DAG\ASCII-DAG.csproj" />
+  </ItemGroup>
+
 </Project>
