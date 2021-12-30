@@ -7,9 +7,9 @@ Some examples:
 ```
 A--B
 
-A--B------D--E
+A--B--C--E--F
    \     /
-    --C--
+    --D--
 
    B--C
   /
