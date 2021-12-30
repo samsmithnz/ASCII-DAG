@@ -4,10 +4,10 @@
     {
         public Node()
         {
-            ItemPrereqs = new();
+            NodePrereqs = new();
         }
 
         public string? Name { get; set; }
-        public List<Node> ItemPrereqs { get; set; }
+        public List<Node> NodePrereqs { get; set; }
     }
 }
