@@ -13,6 +13,7 @@ public class NodeTests
         Graph graph = new(new(),new());
 
         //Act
+        string result = graph.Serialize();
 
         //Assert
         Assert.IsNotNull(graph);
@@ -27,6 +28,7 @@ public class NodeTests
         Graph graph = Helper.Example1();
 
         //Act
+        string result = graph.Serialize();
 
         //Assert
         Assert.IsNotNull(graph);
@@ -42,6 +44,7 @@ public class NodeTests
         Graph graph = Helper.Example2();
 
         //Act
+        string result = graph.Serialize();
 
         //Assert
         Assert.IsNotNull(graph);
