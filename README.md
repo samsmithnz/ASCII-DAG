@@ -8,8 +8,9 @@ Some examples:
 A--B
 
 A--B--C--E--F
-   \     /
-    --D--
+    \   /  
+     \ /
+      D
 
    B--C
   /
