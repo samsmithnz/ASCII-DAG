@@ -1,13 +1,17 @@
-﻿namespace ASCII_DAG.Models
+﻿
+namespace ASCII_DAG.Models
 {
     public class Node
     {
         public Node()
         {
-            NodePrereqs = new();
+            //NodePrereqs = new();
+
         }
 
         public string? Name { get; set; }
-        public List<Node> NodePrereqs { get; set; }
+        //public List<Node> NodePrereqs { get; set; }
+        //public int NodeSuccessors { get; set; }
+        public int Position { get; set; }
     }
 }
