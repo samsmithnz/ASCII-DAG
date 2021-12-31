@@ -4,24 +4,24 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace ASCII_DAG.Tests;
 
 [TestClass]
-public class NodeTests
+public class NodeSerializationTests
 {
     [TestMethod]
-    public void NodeEmptyTest()
+    public void NodeEmptySerializationTest()
     {
         //Arrange
         Node node = new();
 
         //Act
+        string result = Serialization.Serialize(node);
 
         //Assert
-        Assert.IsNotNull(node);
-        Assert.IsNull(node.Name);
-        Assert.AreEqual(0, node.NodePrereqs.Count);
+        Assert.IsNotNull(result);
+        Assert.AreEqual("", result);
     }
 
     [TestMethod]
-    public void NodesAToBTest()
+    public void NodesAToBSerializationTest()
     {
         //Arrange
         Node nodeA = new()
@@ -35,13 +35,10 @@ public class NodeTests
         };
 
         //Act
+        string result = Serialization.Serialize(nodeB);
 
         //Assert
-        Assert.IsNotNull(nodeA);
-        Assert.IsNotNull(nodeB);
-        Assert.AreEqual("A",nodeA.Name);
-        Assert.AreEqual("B",nodeB.Name);
-        Assert.AreEqual(0, nodeA.NodePrereqs.Count);
-        Assert.AreEqual(1, nodeB.NodePrereqs.Count);
+        Assert.IsNotNull(result);
+        Assert.AreEqual("", result);
     }
 }
