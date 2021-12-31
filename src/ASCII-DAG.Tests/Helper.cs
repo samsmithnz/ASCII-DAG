@@ -1,9 +1,4 @@
 ﻿using ASCII_DAG.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ASCII_DAG.Tests
 {
@@ -12,12 +7,9 @@ namespace ASCII_DAG.Tests
         //A
         public static Graph Example1()
         {
-            Node nodeA = new()
-            {
-                Name = "A"
-            };
+            Node nodeA = new("A");
             Graph graph = new(
-                new() { nodeA }, 
+                new() { nodeA },
                 null);
             return graph;
         }
@@ -25,14 +17,8 @@ namespace ASCII_DAG.Tests
         //A--B
         public static Graph Example2()
         {
-            Node nodeA = new()
-            {
-                Name = "A"
-            };
-            Node nodeB = new()
-            {
-                Name = "B"
-            };
+            Node nodeA = new("A");
+            Node nodeB = new("B");
             Edge edge1 = new("A", "B");
             Graph graph = new(
                 new() { nodeA, nodeB },
@@ -40,12 +26,12 @@ namespace ASCII_DAG.Tests
             return graph;
         }
 
-//   B--C
-//  /
-// /
-//A
-// \
-//  \  
-//   D--E
+        //   B--C
+        //  /
+        // /
+        //A
+        // \
+        //  \  
+        //   D--E
     }
 }
