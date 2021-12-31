@@ -19,6 +19,10 @@ public class NodeTests
         Assert.IsNotNull(graph);
         Assert.AreEqual(0, graph.Nodes.Count);
         Assert.AreEqual(0, graph.Edges.Count);
+        string expected = @"
+
+";
+        Assert.AreEqual(expected, result);
     }
 
     [TestMethod]
@@ -35,6 +39,10 @@ public class NodeTests
         Assert.AreEqual(1, graph.Nodes.Count);
         Assert.AreEqual(0, graph.Edges.Count);
         Assert.AreEqual("A", graph.Nodes[0].Name);
+        string expected = @"
+A
+";
+        Assert.AreEqual(expected, result);
     }
 
     [TestMethod]
@@ -52,5 +60,9 @@ public class NodeTests
         Assert.AreEqual(1, graph.Edges.Count);
         Assert.AreEqual("A", graph.Nodes[0].Name);
         Assert.AreEqual("B", graph.Nodes[1].Name);
+        string expected = @"
+A--B
+";
+        Assert.AreEqual(expected, result);
     }
 }

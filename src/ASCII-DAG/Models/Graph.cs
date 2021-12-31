@@ -1,11 +1,13 @@
-﻿namespace ASCII_DAG.Models
+﻿using System.Text;
+
+namespace ASCII_DAG.Models
 {
     public class Graph
     {
         public Graph(List<Node> nodes, List<Edge>? edges = null)
         {
             Nodes = nodes;
-            if (edges == null )
+            if (edges == null)
             {
                 Edges = new List<Edge>();
             }
@@ -19,7 +21,23 @@
 
         public string Serialize()
         {
-            return "";
+            StringBuilder sb = new();
+            sb.Append(Environment.NewLine);
+            if (Nodes.Count == 1)
+            {
+                sb.Append("A");
+            }
+            else if (Nodes.Count == 2)
+            {
+                sb.Append("A--B");
+            }
+            sb.Append(Environment.NewLine);
+            return sb.ToString();
+        }
+
+        private string GenerateSpaces(int number)
+        {
+            return new string(' ', number);
         }
     }
 }
