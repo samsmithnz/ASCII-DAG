@@ -10,7 +10,7 @@ public class NodeTests
     public void NodeEmptyTest()
     {
         //Arrange
-        Graph graph = new(new(),new());
+        Graph graph = new(new(), new());
 
         //Act
         string result = graph.Serialize();
