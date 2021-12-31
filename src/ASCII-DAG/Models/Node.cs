@@ -6,13 +6,9 @@ namespace ASCII_DAG.Models
         public Node(string name)
         {
             Name = name;
-            //NodePrereqs = new();
-
         }
 
         public string Name { get; set; }
-        //public List<Node> NodePrereqs { get; set; }
-        //public int NodeSuccessors { get; set; }
         public int Position { get; set; }
     }
 }

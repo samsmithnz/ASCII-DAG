@@ -5,9 +5,9 @@ namespace ASCII_DAG.Models
     {
         public Edge(string source, string destintation)
         {
-            Weight = 1;
             Source = source;
             Destination = destintation;
+            Weight = 1;
         }
         public string Source { get; set; }
         public string Destination { get; set; }
