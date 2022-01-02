@@ -4,7 +4,7 @@ updates:
   directory: /src/ASCII-DAG.Tests/
   schedule:
     interval: daily
-    time: 06:00
+    time: "06:00"
     timezone: America/New_York
   assignees:
   - samsmithnz
@@ -13,7 +13,7 @@ updates:
   directory: /src/ASCII-DAG/
   schedule:
     interval: daily
-    time: 06:00
+    time: "06:00"
     timezone: America/New_York
   assignees:
   - samsmithnz
@@ -22,7 +22,7 @@ updates:
   directory: /
   schedule:
     interval: daily
-    time: 06:00
+    time: "06:00"
     timezone: America/New_York
   assignees:
   - samsmithnz
